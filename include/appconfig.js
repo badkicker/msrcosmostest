@@ -10,7 +10,7 @@ if (process.env.NODE_ENV == 'development') {
     appConfig = {
         consoleMsg: 'Development configuration loaded.',
         serverConfig: {
-            address: 'http://localhost',
+            address: 'https://ram-msr-test.herokuapp.com',
             port: process.env.PORT || 3001,
             options: {
                 CORS: {
@@ -19,7 +19,7 @@ if (process.env.NODE_ENV == 'development') {
             }
         },
         databaseConfig: {
-            url: 'mongodb://localhost:27017/msr-db',
+            url: 'mongodb://ramakrishnatolapu:asdf123@ds147723.mlab.com:47723/msr-db',
         },
         sessionConfig: {
             sessionPayload: {
@@ -52,7 +52,7 @@ if (process.env.NODE_ENV == 'development') {
     appConfig = {
         consoleMsg: 'Production configuration loaded.',
         serverConfig: {
-            address: '//server.caterbinge.com',
+            address: 'https://ram-msr-test.herokuapp.com',
             port: process.env.PORT || 3600,
             options: {
                 CORS: {
@@ -61,7 +61,7 @@ if (process.env.NODE_ENV == 'development') {
             }
         },
         databaseConfig: {
-            url: 'mongodb://ramakrishna:msr@555@ds147723.mlab.com:47723/msr-db',
+            url: 'mongodb://ramakrishnatolapu:asdf123@ds147723.mlab.com:47723/msr-db',
         },
         sessionConfig: {
             sessionPayload: {
