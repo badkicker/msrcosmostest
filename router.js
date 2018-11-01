@@ -11,12 +11,7 @@ module.exports = () => {
             res.status(500).send({ message: 'Sorry Bro!!', });
         });
     }
-    global.app.get('/', (req, res, next) => {
-        clientsiteFootPrint(req)
-        res.status(200).send({ message: 'Hello World', });
-    }, (error) => {
-        res.status(500).send({ message: 'Sorry Bro!!', });
-    });
+   
 
     var clientsiteFootPrint = async(req) => {
         var payload = {

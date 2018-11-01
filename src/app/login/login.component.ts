@@ -64,7 +64,7 @@ export class LoginComponent implements OnInit {
       'username': new FormControl('', [Validators.required, onEmailGiven,
         // Validators.pattern('^([_a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,5}))|(\d+$)$')
       ]),
-      'type': new FormControl('3', [Validators.required])
+      'type': new FormControl(null, [Validators.required])
     });
   }
  
