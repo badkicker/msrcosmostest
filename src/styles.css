@@ -1,1 +1,209 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: #EEEEEE;
+    height: 100%;
+    width: 100%;
+    font-weight: 500;
+    margin: 0px;
+    padding: 0px;
+    font-size: 13px;
+    color: #666666;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* font-family: 'Raleway', sans-serif;  */
+    /*  position: relative;*/
+}
+
+html {
+    height: 100%;
+}
+
+
+
+h1 {
+    font-size: 48px;
+    line-height: 40px;
+    font-weight: 800;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 800;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 800;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 600;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+h6 {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    color: #aaaaaa;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    clear: both;
+}
+
+p {
+    color: #666666;
+    line-height: 19.6px;
+    margin-bottom: 0px;
+}
+
+b {
+    font-weight: 500;
+}
+
+b,
+strong {
+    font-weight: bolder;
+    margin-left: 5px;
+}
+
+
+.container-reg {
+    margin-top: 30px !important;
+}
+
+
+
+.mat-form-field-label {
+    color: #757070;
+}
+
+.mat-focused .mat-form-field-label {
+    color: black;
+}
+
+.mat-form-field-wrapper {
+    padding-bottom: 0em;
+}
+
+.mat-form-field-underline {
+    bottom: 0rem;
+    background-color: rgba(0, 0, 0, 0.19);
+}
+
+/* .mat-form-field {
+    width: 95% !important;
+    padding-bottom: 1.5em !important;
+} */
+
+
+.mat-radio-inner-circle {
+    background-color: rgb(103, 58, 183) !important;
+    height: 15px !important;
+    width: 15px !important;
+    top: 1px !important;
+}
+
+.mat-radio-outer-circle {
+    height: 15px !important;
+    width: 15px !important;
+    top: 1px !important;
+}
+
+.mat-radio-checked .mat-radio-outer-circle {
+    border-color: #008CFF !important;
+}
+
+.mat-checkbox-checked.mat-accent .mat-checkbox-background {
+    background-color: #008CFF !important;
+}
+
+.mat-form-field {
+    width: 100% !important;
+    padding-bottom: .75em;
+    /* padding-top: 25px; */
+}
+
+.mat-placeholder-required {
+    color: red;
+}
+.mat-form-field-subscript-wrapper {
+    top: auto;
+    margin: 2px 0;
+}
+
+.mat-form-field-invalid .mat-form-field-label {
+    color: #757070;
+}
+
+.mat-form-field-infix {
+    display: block;
+    position: relative;
+    flex: auto;
+    min-width: 0;
+    font-size: 16px;
+    width: 180px;
+}
+.full {
+    min-height: 100%;
+    height: 100%;
+}
+
+.log-padding {
+    padding: 0px 30px;
+}
+
+.reg-padding {
+    padding: 2px 30px;
+}
+
+.mat-radio-label-content {
+    padding-top: 3px;
+}
+
+.mat-radio-container {
+    height: 15px !important;
+}
+
+.example-radio-group {
+    /* display: inline-flex; */
+    flex-direction: row;
+    padding: 5px 10px 5px 10px;
+}
+
+.example-radio-button {
+    margin: 5px;
+}

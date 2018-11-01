@@ -1,0 +1,69 @@
+<div class="row">
+  <div class="col-sm-10 offset-sm-1">
+    <div class="float-right">
+      <button class="btn btn-sm-btn-default " (click)="onlogout()">Logout</button>
+    </div>
+  </div>
+  <div class="col-sm-10 offset-sm-1">
+    <h4>Books Data</h4>
+    <div class="row">
+        <div class="col-sm-10 offset-sm-1">
+            <div class="float-right">
+                <button class="btn btn-md-btn-default " (click)="addBook()">Add Book</button>
+              </div>
+          </div>
+    </div>
+
+   
+    <div class="example-container mat-elevation-z8">
+
+      <mat-table [dataSource]="booksdataSource" matSort>
+
+        <!-- ID Column -->
+        <ng-container matColumnDef="bookName">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Book Name </mat-header-cell>
+          <mat-cell *matCellDef="let row"> {{row.bookName}} </mat-cell>
+        </ng-container>
+
+        <!-- Progress Column -->
+        <ng-container matColumnDef="author">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Author Name </mat-header-cell>
+          <mat-cell *matCellDef="let row"> {{row.author}} </mat-cell>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="quantity">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Quantity </mat-header-cell>
+          <mat-cell *matCellDef="let row"> {{row.quantity}} </mat-cell>
+        </ng-container>
+
+        <!-- Color Column -->
+        <ng-container matColumnDef="action">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Action</mat-header-cell>
+          <mat-cell *matCellDef="let row">
+            <button class="btn btn-sm" (click)='onUpdate(row,i)'>
+              Update
+              <!-- <mat-icon aria-label="person_add_disabled">person_add_disabled</mat-icon> -->
+            </button>
+            <button class="btn btn-sm" (click)='onDelete(row,i)'>
+              Delete
+              <!-- <mat-icon aria-label="person_add_disabled">person_add_disabled</mat-icon> -->
+            </button>
+          </mat-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;">
+        </mat-row>
+      </mat-table>
+
+      <mat-paginator [pageSizeOptions]="[5, 10]"></mat-paginator>
+    </div>
+  </div>
+
+  <div class="col-sm-10 offset-sm-1">
+    <h4>User Data</h4>
+    <app-user-dashboard></app-user-dashboard>
+  </div>
+
+</div>

@@ -1,0 +1,22 @@
+/* form { margin: 0px 10px; }
+
+h2 {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.container { max-width: 380px; }
+
+
+.divider hr {
+  margin: 7px 0px;
+  width: 35%;
+}
+
+.left { float: left; }
+
+.right { float: right; } */
+
+.mat-checkbox-layout {
+  padding-top: 0 !important;
+}
