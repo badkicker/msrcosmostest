@@ -61,7 +61,7 @@ if (process.env.NODE_ENV == 'development') {
             }
         },
         databaseConfig: {
-            url: 'mongodb://<ramakrishna>:<msr@555>@ds147723.mlab.com:47723/msr-db',
+            url: 'mongodb://ramakrishna:msr@555@ds147723.mlab.com:47723/msr-db',
         },
         sessionConfig: {
             sessionPayload: {
