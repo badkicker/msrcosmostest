@@ -10,7 +10,7 @@ import { BooksComponent } from '../books/books.component';
 })
 export class DashboardComponent implements OnInit {
 
-  displayedColumns = ['bookName', 'author', 'quantity', 'action'];
+  displayedColumns = ['bookName', 'author', 'quantity','pubDate', 'action'];
   booksdataSource: MatTableDataSource<Array<any>> = new MatTableDataSource([]);;
   userdataSource: MatTableDataSource<Array<any>>= new MatTableDataSource([]);;
   @ViewChild(MatPaginator) paginator: MatPaginator;

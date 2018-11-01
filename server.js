@@ -86,6 +86,7 @@ global.app.use(function(req, res, next) {
 
 /***************************REST APIs******************/
 (function() {
+    require('./express')();
     require('./router')();
     require('./apis/userdata')();
     require('./apis/bkdata')();

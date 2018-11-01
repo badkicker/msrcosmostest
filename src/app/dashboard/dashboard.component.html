@@ -36,7 +36,10 @@
           <mat-header-cell *matHeaderCellDef mat-sort-header> Quantity </mat-header-cell>
           <mat-cell *matCellDef="let row"> {{row.quantity}} </mat-cell>
         </ng-container>
-
+        <ng-container matColumnDef="pubDate">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> Publish Date </mat-header-cell>
+            <mat-cell *matCellDef="let row"> {{ row.createdTime | date:'yyyy-MMM-dd'}} </mat-cell>
+          </ng-container>
         <!-- Color Column -->
         <ng-container matColumnDef="action">
           <mat-header-cell *matHeaderCellDef mat-sort-header> Action</mat-header-cell>
